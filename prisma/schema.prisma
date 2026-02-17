@@ -7,9 +7,10 @@
 // prisma/schema.prisma
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client"
+  output          = "./generated"
+  previewFeatures = ["relationJoins"]
 }
-
 datasource db {
   provider          = "postgresql"
 }
